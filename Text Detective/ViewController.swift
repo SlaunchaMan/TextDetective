@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var shareButton: UIBarButtonItem?
+    
     @IBOutlet var tableView: UITableView? {
         didSet {
             if let tableView = tableView {
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
     @IBAction func textFieldDidChange(_ sender: UITextField) {
         characterInspectionResults = sender.text?.characterInspection ?? []
         tableView?.reloadData()
+        shareButton?.isEnabled = sender.text?.characters.count ?? 0 > 0
     }
     
     var characterInspectionResults: [InspectionResult] = []
@@ -31,18 +34,41 @@ class ViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        navigationItem.rightBarButtonItem = editButtonItem
+        navigationItem.leftBarButtonItem = editButtonItem
+        
+        shareButton = UIBarButtonItem(barButtonSystemItem: .action,
+                                      target: self,
+                                      action: #selector(shareButtonPressed(_:)))
+        
+        shareButton?.isEnabled = false
+        
+        navigationItem.rightBarButtonItem = shareButton
     }
     
     func updateTextFieldText() {
         textField?.text = characterInspectionResults
             .map { $0.originalString }
             .joined(separator: "")
+        
+        shareButton?.isEnabled = textField?.text?.characters.count ?? 0 > 0
     }
     
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         tableView?.setEditing(editing, animated: animated)
+    }
+    
+    func shareButtonPressed(_ sender: UIBarButtonItem) {
+        guard let textToShare = textField?.text,
+            textToShare.characters.count > 0
+            else { fatalError() }
+        
+        let controller = UIActivityViewController(activityItems: [textToShare],
+                                                  applicationActivities: nil)
+        
+        present(controller, animated: true, completion: nil)
+        
+        controller.popoverPresentationController?.barButtonItem = sender
     }
     
 }
