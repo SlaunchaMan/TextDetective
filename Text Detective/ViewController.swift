@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     @IBAction func textFieldDidChange(_ sender: UITextField) {
         characterInspectionResults = sender.text?.characterInspection ?? []
         tableView?.reloadData()
-        shareButton?.isEnabled = sender.text?.characters.count ?? 0 > 0
+        
+        updateBarButtonItems()
     }
     
     var characterInspectionResults: [InspectionResult] = []
@@ -40,9 +41,21 @@ class ViewController: UIViewController {
                                       target: self,
                                       action: #selector(shareButtonPressed(_:)))
         
-        shareButton?.isEnabled = false
-        
         navigationItem.rightBarButtonItem = shareButton
+        
+        updateBarButtonItems()
+    }
+    
+    func updateBarButtonItems() {
+        if let text = textField?.text, text.characters.count > 0 {
+            editButtonItem.isEnabled = true
+            shareButton?.isEnabled = true
+        }
+        else {
+            editButtonItem.isEnabled = false
+            shareButton?.isEnabled = false
+            setEditing(false, animated: false)
+        }
     }
     
     func updateTextFieldText() {
@@ -50,7 +63,7 @@ class ViewController: UIViewController {
             .map { $0.originalString }
             .joined(separator: "")
         
-        shareButton?.isEnabled = textField?.text?.characters.count ?? 0 > 0
+        updateBarButtonItems()
     }
     
     override func setEditing(_ editing: Bool, animated: Bool) {
