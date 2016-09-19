@@ -111,8 +111,7 @@ extension ViewController: UITableViewDataSource {
         if editingStyle == .delete {
             characterInspectionResults.remove(at: indexPath.row)
             
-            tableView.deleteRows(at: [indexPath],
-                                 with: .automatic)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
             
             updateTextFieldText()
         }
@@ -142,6 +141,47 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView,
                    editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .delete
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   canPerformAction action: Selector,
+                   forRowAt indexPath: IndexPath,
+                   withSender sender: Any?) -> Bool {
+        if action == #selector(copy(_:)) {
+            return true
+        }
+        else if action == #selector(cut(_:)) {
+            return true
+        }
+        
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   performAction action: Selector,
+                   forRowAt indexPath: IndexPath,
+                   withSender sender: Any?) {
+        let stringAtIndexPath = characterInspectionResults[indexPath.row]
+            .originalString
+        
+        if action == #selector(copy(_:)) {
+            UIPasteboard.general.setValue(stringAtIndexPath,
+                                          forPasteboardType: "public.text")
+        }
+        else if action == #selector(cut(_:)) {
+            UIPasteboard.general.setValue(stringAtIndexPath,
+                                          forPasteboardType: "public.text")
+            
+            characterInspectionResults.remove(at: indexPath.row)
+            updateTextFieldText()
+            
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
     
 }
