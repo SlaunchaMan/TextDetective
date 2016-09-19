@@ -40,6 +40,11 @@ class ViewController: UIViewController {
             .joined(separator: "")
     }
     
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        tableView?.setEditing(editing, animated: animated)
+    }
+    
 }
 
 class CodePointCell: UITableViewCell, StoryboardIdentifiable {
@@ -69,6 +74,11 @@ extension ViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
     }
     
     func tableView(_ tableView: UITableView,
@@ -110,3 +120,11 @@ extension ViewController: UITableViewDataSource {
     
 }
 
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView,
+                   editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .delete
+    }
+    
+}
