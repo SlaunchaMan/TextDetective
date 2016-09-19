@@ -79,8 +79,6 @@ extension String {
                           kCFStringTransformToUnicodeName,
                           true)
         
-        print("\(cfString as String)")
-
         return cfString as String
     }
     
