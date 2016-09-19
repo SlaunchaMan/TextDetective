@@ -159,7 +159,7 @@ extension ViewController: UITableViewDelegate {
             return true
         }
         else if action == #selector(paste(_:)) {
-            return UIPasteboard.general.value(forPasteboardType: "public.text") != nil
+            return UIPasteboard.general.textValue != nil
         }
         
         return false
@@ -173,12 +173,10 @@ extension ViewController: UITableViewDelegate {
             .originalString
         
         if action == #selector(copy(_:)) {
-            UIPasteboard.general.setValue(stringAtIndexPath,
-                                          forPasteboardType: "public.text")
+            UIPasteboard.general.copy(text: stringAtIndexPath)
         }
         else if action == #selector(cut(_:)) {
-            UIPasteboard.general.setValue(stringAtIndexPath,
-                                          forPasteboardType: "public.text")
+            UIPasteboard.general.copy(text: stringAtIndexPath)
             
             characterInspectionResults.remove(at: indexPath.row)
             updateTextFieldText()
@@ -186,7 +184,7 @@ extension ViewController: UITableViewDelegate {
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         else if action == #selector(paste(_:)) {
-            if let stringToPaste = UIPasteboard.general.value(forPasteboardType: "public.text") as? String {
+            if let stringToPaste = UIPasteboard.general.textValue {
                 let resultsToInsert = stringToPaste.characterInspection
                 
                 guard resultsToInsert.count > 0 else { return }

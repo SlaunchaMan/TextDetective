@@ -16,6 +16,7 @@
 		1FB5C9941D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9931D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift */; };
 		1FB5C9A21D8C89E4009DE7D3 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */; };
 		1FD51AF01D8F7DFF009B65B7 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */; };
+		1FD51AF21D8F89C3009B65B7 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1FB5C9951D8C7E3F009DE7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInspection.swift; sourceTree = "<group>"; };
 		1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringClipboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */,
 				1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */,
+				1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */,
 				1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */,
 				1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */,
 				1FB5C9771D8C7E3F009DE7D3 /* Main.storyboard */,
@@ -271,6 +274,7 @@
 				1FD51AF01D8F7DFF009B65B7 /* StoryboardIdentifiable.swift in Sources */,
 				1FB5C9761D8C7E3F009DE7D3 /* ViewController.swift in Sources */,
 				1FB5C9741D8C7E3F009DE7D3 /* AppDelegate.swift in Sources */,
+				1FD51AF21D8F89C3009B65B7 /* StringClipboard.swift in Sources */,
 				1FB5C9A21D8C89E4009DE7D3 /* StringInspection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
