@@ -82,6 +82,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView,
+                   canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = CodePointCell.dequeue(fromTableView: tableView)
             else { fatalError() }
@@ -111,6 +116,18 @@ extension ViewController: UITableViewDataSource {
             
             updateTextFieldText()
         }
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   moveRowAt sourceIndexPath: IndexPath,
+                   to destinationIndexPath: IndexPath) {
+        let selectedResult = characterInspectionResults
+            .remove(at: sourceIndexPath.row)
+        
+        characterInspectionResults.insert(selectedResult,
+                                          at: destinationIndexPath.row)
+        
+        updateTextFieldText()
     }
     
     func tableView(_ tableView: UITableView,
