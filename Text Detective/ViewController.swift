@@ -158,6 +158,9 @@ extension ViewController: UITableViewDelegate {
         else if action == #selector(cut(_:)) {
             return true
         }
+        else if action == #selector(paste(_:)) {
+            return UIPasteboard.general.value(forPasteboardType: "public.text") != nil
+        }
         
         return false
     }
@@ -181,6 +184,27 @@ extension ViewController: UITableViewDelegate {
             updateTextFieldText()
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        else if action == #selector(paste(_:)) {
+            if let stringToPaste = UIPasteboard.general.value(forPasteboardType: "public.text") as? String {
+                let resultsToInsert = stringToPaste.characterInspection
+                
+                guard resultsToInsert.count > 0 else { return }
+                
+                characterInspectionResults.insert(contentsOf: resultsToInsert,
+                                                  at: indexPath.row)
+                
+                updateTextFieldText()
+                
+                var rowsToInsert: [IndexPath] = []
+                
+                for i in 0 ..< resultsToInsert.count {
+                    rowsToInsert.append(IndexPath(row: indexPath.row + i,
+                                                  section: 0))
+                }
+                
+                tableView.insertRows(at: rowsToInsert, with: .automatic)
+            }
         }
     }
     
