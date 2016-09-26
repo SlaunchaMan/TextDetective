@@ -3,11 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Text Detective-->
+        <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="01J-lp-oVM" sceneMemberID="viewController">
@@ -18,34 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2Q-ij-kOE">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GnN-9G-cHJ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="2tS-dP-DK1"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="GnN-9G-cHJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="0F3-Qy-cn7"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="b2Q-ij-kOE" secondAttribute="bottom" id="WBc-hd-iJB"/>
-                            <constraint firstItem="GnN-9G-cHJ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="b97-L8-6d9"/>
-                            <constraint firstAttribute="trailing" secondItem="b2Q-ij-kOE" secondAttribute="trailing" id="diC-KF-dGs"/>
-                            <constraint firstItem="GnN-9G-cHJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="g2F-Ho-a5g"/>
-                            <constraint firstItem="b2Q-ij-kOE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jhc-ci-hL0"/>
-                            <constraint firstItem="b2Q-ij-kOE" firstAttribute="top" secondItem="GnN-9G-cHJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qFv-qa-N7M"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Text Detective" id="1Ng-4q-qsg">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="edit" id="E8O-Nr-TFs"/>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="l4M-N2-RSV"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="1Ng-4q-qsg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

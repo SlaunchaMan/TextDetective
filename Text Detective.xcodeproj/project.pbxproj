@@ -18,6 +18,13 @@
 		1FD51AF01D8F7DFF009B65B7 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */; };
 		1FD51AF21D8F89C3009B65B7 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */; };
 		1FD51AF51D8F94BA009B65B7 /* TestInput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FD51AF41D8F94BA009B65B7 /* TestInput.txt */; };
+		1FD51AFD1D8F9C4C009B65B7 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */; };
+		1FD51B001D8F9C4C009B65B7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */; };
+		1FD51B041D8F9C4C009B65B7 /* Text Inspector.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FD51B091D8F9D34009B65B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */; };
+		1FD51B0B1D908432009B65B7 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */; };
+		1FD51B0C1D908439009B65B7 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */; };
+		1FD51B0D1D908442009B65B7 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,28 @@
 			remoteGlobalIDString = 1FB5C96F1D8C7E3F009DE7D3;
 			remoteInfo = "Text Detective";
 		};
+		1FD51B021D8F9C4C009B65B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD51AF91D8F9C4C009B65B7;
+			remoteInfo = "Text Inspector";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1FD51B041D8F9C4C009B65B7 /* Text Inspector.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FB5C9701D8C7E3F009DE7D3 /* Text Detective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Detective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +83,10 @@
 		1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringClipboard.swift; sourceTree = "<group>"; };
 		1FD51AF41D8F94BA009B65B7 /* TestInput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestInput.txt; sourceTree = "<group>"; };
+		1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Text Inspector.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		1FD51AFF1D8F9C4C009B65B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1FD51B011D8F9C4C009B65B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FD51AF71D8F9C4C009B65B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +127,7 @@
 				1FB5C9721D8C7E3F009DE7D3 /* Text Detective */,
 				1FB5C9871D8C7E3F009DE7D3 /* Text DetectiveTests */,
 				1FB5C9921D8C7E3F009DE7D3 /* Text DetectiveUITests */,
+				1FD51AFB1D8F9C4C009B65B7 /* Text Inspector */,
 				1FB5C9711D8C7E3F009DE7D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +138,7 @@
 				1FB5C9701D8C7E3F009DE7D3 /* Text Detective.app */,
 				1FB5C9841D8C7E3F009DE7D3 /* Text DetectiveTests.xctest */,
 				1FB5C98F1D8C7E3F009DE7D3 /* Text DetectiveUITests.xctest */,
+				1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +186,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1FD51AFB1D8F9C4C009B65B7 /* Text Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */,
+				1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */,
+				1FD51B011D8F9C4C009B65B7 /* Info.plist */,
+			);
+			path = "Text Inspector";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,10 +206,12 @@
 				1FB5C96C1D8C7E3F009DE7D3 /* Sources */,
 				1FB5C96D1D8C7E3F009DE7D3 /* Frameworks */,
 				1FB5C96E1D8C7E3F009DE7D3 /* Resources */,
+				1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FD51B031D8F9C4C009B65B7 /* PBXTargetDependency */,
 			);
 			name = "Text Detective";
 			productName = "Text Detective";
@@ -201,6 +254,23 @@
 			productReference = 1FB5C98F1D8C7E3F009DE7D3 /* Text DetectiveUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1FD51AF91D8F9C4C009B65B7 /* Text Inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD51B051D8F9C4C009B65B7 /* Build configuration list for PBXNativeTarget "Text Inspector" */;
+			buildPhases = (
+				1FD51AF61D8F9C4C009B65B7 /* Sources */,
+				1FD51AF71D8F9C4C009B65B7 /* Frameworks */,
+				1FD51AF81D8F9C4C009B65B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Text Inspector";
+			productName = "Text Inspector";
+			productReference = 1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,6 +298,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1FB5C96F1D8C7E3F009DE7D3;
 					};
+					1FD51AF91D8F9C4C009B65B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2Z262HL3RX;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1FB5C96B1D8C7E3F009DE7D3 /* Build configuration list for PBXProject "Text Detective" */;
@@ -246,6 +321,7 @@
 				1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */,
 				1FB5C9831D8C7E3F009DE7D3 /* Text DetectiveTests */,
 				1FB5C98E1D8C7E3F009DE7D3 /* Text DetectiveUITests */,
+				1FD51AF91D8F9C4C009B65B7 /* Text Inspector */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +349,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD51AF81D8F9C4C009B65B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD51B001D8F9C4C009B65B7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +391,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FD51AF61D8F9C4C009B65B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD51B0C1D908439009B65B7 /* StringInspection.swift in Sources */,
+				1FD51B091D8F9D34009B65B7 /* ViewController.swift in Sources */,
+				1FD51AFD1D8F9C4C009B65B7 /* ActionViewController.swift in Sources */,
+				1FD51B0B1D908432009B65B7 /* StringClipboard.swift in Sources */,
+				1FD51B0D1D908442009B65B7 /* StoryboardIdentifiable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -319,6 +415,11 @@
 			isa = PBXTargetDependency;
 			target = 1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */;
 			targetProxy = 1FB5C9901D8C7E3F009DE7D3 /* PBXContainerItemProxy */;
+		};
+		1FD51B031D8F9C4C009B65B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FD51AF91D8F9C4C009B65B7 /* Text Inspector */;
+			targetProxy = 1FD51B021D8F9C4C009B65B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -337,6 +438,14 @@
 				1FB5C97D1D8C7E3F009DE7D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD51AFF1D8F9C4C009B65B7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -438,6 +547,7 @@
 		1FB5C9991D8C7E3F009DE7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Z262HL3RX;
 				INFOPLIST_FILE = "Text Detective/Info.plist";
@@ -451,6 +561,7 @@
 		1FB5C99A1D8C7E3F009DE7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Z262HL3RX;
 				INFOPLIST_FILE = "Text Detective/Info.plist";
@@ -521,6 +632,32 @@
 			};
 			name = Release;
 		};
+		1FD51B061D8F9C4C009B65B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				INFOPLIST_FILE = "Text Inspector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.Text-Inspector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1FD51B071D8F9C4C009B65B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				INFOPLIST_FILE = "Text Inspector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.Text-Inspector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,6 +693,15 @@
 			buildConfigurations = (
 				1FB5C99F1D8C7E3F009DE7D3 /* Debug */,
 				1FB5C9A01D8C7E3F009DE7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD51B051D8F9C4C009B65B7 /* Build configuration list for PBXNativeTarget "Text Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD51B061D8F9C4C009B65B7 /* Debug */,
+				1FD51B071D8F9C4C009B65B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

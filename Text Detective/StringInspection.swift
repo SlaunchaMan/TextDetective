@@ -9,24 +9,45 @@
 import CoreFoundation
 import Foundation
 
-enum InspectionResult {
-    case singleCharacter(String)
-    case unicodeDescription(String)
-    
-    var originalString: String {
-        switch self {
-        case let .singleCharacter(string):
-            return string
-        case let .unicodeDescription(string):
-            return String.convert(fromUnicodeDescription: string)
-        }
-    }
-}
-
 extension String {
     
-    var characterInspection: [InspectionResult] {
-        let cfString = NSMutableString(string: self) as CFMutableString
+    public struct InspectionOptions {
+        let shouldDecompose: Bool
+        
+        init(shouldDecompose: Bool = false) {
+            self.shouldDecompose = shouldDecompose
+        }
+    }
+    
+    public enum InspectionResult {
+        case singleCharacter(String)
+        case unicodeDescription(String)
+        
+        var originalString: String {
+            switch self {
+            case let .singleCharacter(string):
+                return string
+            case let .unicodeDescription(string):
+                return String.convert(fromUnicodeDescription: string)
+            }
+        }
+    }
+    
+    private var cfString: CFString {
+        return self as CFString
+    }
+    
+    private var mutableCFString: CFMutableString {
+        return NSMutableString(string: self) as CFMutableString
+    }
+    
+    func inspect(withOptions options: InspectionOptions = InspectionOptions()) -> [InspectionResult] {
+        let cfString = self.mutableCFString
+        
+        if options.shouldDecompose {
+            CFStringNormalize(cfString,
+                              CFStringNormalizationForm.D)
+        }
         
         CFStringTransform(cfString,
                           nil,
@@ -71,8 +92,7 @@ extension String {
     }
     
     static func convert(fromUnicodeDescription description: String) -> String {
-        let cfString = NSMutableString(string: "\\N{\(description)}")
-            as CFMutableString
+        let cfString = "\\N{\(description)}".mutableCFString
         
         CFStringTransform(cfString,
                           nil,

@@ -7,17 +7,16 @@
 //
 
 import UIKit
-
-let PlaintextPasteboardType = "public.text"
+import MobileCoreServices
 
 extension UIPasteboard {
     
     var textValue: String? {
-        return value(forPasteboardType: PlaintextPasteboardType) as? String
+        return value(forPasteboardType: kUTTypeText as String) as? String
     }
     
     func copy(text value: String) {
-        setValue(value, forPasteboardType: PlaintextPasteboardType)
+        setValue(value, forPasteboardType: kUTTypeText as String)
     }
     
 }

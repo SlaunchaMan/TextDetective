@@ -24,13 +24,15 @@ class ViewController: UIViewController {
     @IBOutlet var textField: UITextField?
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
-        characterInspectionResults = sender.text?.characterInspection ?? []
+        let options = String.InspectionOptions(shouldDecompose: true)
+        
+        characterInspectionResults = sender.text?.inspect(withOptions: options) ?? []
         tableView?.reloadData()
         
         updateBarButtonItems()
     }
     
-    var characterInspectionResults: [InspectionResult] = []
+    var characterInspectionResults: [String.InspectionResult] = []
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -54,6 +56,7 @@ class ViewController: UIViewController {
         else {
             editButtonItem.isEnabled = false
             shareButton?.isEnabled = false
+            
             setEditing(false, animated: false)
         }
     }
@@ -224,7 +227,8 @@ extension ViewController: UITableViewDelegate {
         }
         else if action == #selector(paste(_:)) {
             if let stringToPaste = UIPasteboard.general.textValue {
-                let resultsToInsert = stringToPaste.characterInspection
+                let options = String.InspectionOptions(shouldDecompose: true)
+                let resultsToInsert = stringToPaste.inspect(withOptions: options)
                 
                 guard resultsToInsert.count > 0 else { return }
                 
