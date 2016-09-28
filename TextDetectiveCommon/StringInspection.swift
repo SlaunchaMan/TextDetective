@@ -51,7 +51,7 @@ extension String {
         
         CFStringTransform(cfString,
                           nil,
-                          kCFStringTransformToUnicodeName,
+                          "Any-Name".cfString,
                           false)
         
         let descriptionString = cfString as String
