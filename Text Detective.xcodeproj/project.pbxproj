@@ -17,6 +17,17 @@
 		1F65C96B1D9B7839002BAC03 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9681D9B7839002BAC03 /* StringClipboard.swift */; };
 		1F65C96C1D9B7839002BAC03 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9691D9B7839002BAC03 /* StringInspection.swift */; };
 		1F65C96E1D9B7A33002BAC03 /* TestInput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F65C96D1D9B7A32002BAC03 /* TestInput.txt */; };
+		1F65C9751D9B7B11002BAC03 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F65C9731D9B7B11002BAC03 /* Interface.storyboard */; };
+		1F65C9771D9B7B11002BAC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F65C9761D9B7B11002BAC03 /* Assets.xcassets */; };
+		1F65C97E1D9B7B11002BAC03 /* Text Detective Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F65C97D1D9B7B11002BAC03 /* Text Detective Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F65C9831D9B7B11002BAC03 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9821D9B7B11002BAC03 /* InterfaceController.swift */; };
+		1F65C9851D9B7B11002BAC03 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9841D9B7B11002BAC03 /* ExtensionDelegate.swift */; };
+		1F65C9871D9B7B11002BAC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F65C9861D9B7B11002BAC03 /* Assets.xcassets */; };
+		1F65C98B1D9B7B11002BAC03 /* Text Detective Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1F65C9711D9B7B11002BAC03 /* Text Detective Watch.app */; };
+		1F65C9A01D9B7BB7002BAC03 /* TextDetectiveCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9991D9B7BB7002BAC03 /* TextDetectiveCommon.framework */; };
+		1F65C9A11D9B7BB7002BAC03 /* TextDetectiveCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9991D9B7BB7002BAC03 /* TextDetectiveCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F65C9A81D9B7C00002BAC03 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9691D9B7839002BAC03 /* StringInspection.swift */; };
+		1F65C9AB1D9B7D00002BAC03 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9671D9B7839002BAC03 /* StoryboardIdentifiable.swift */; };
 		1FB5C9741D8C7E3F009DE7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */; };
 		1FB5C9761D8C7E3F009DE7D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */; };
 		1FB5C9791D8C7E3F009DE7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C9771D8C7E3F009DE7D3 /* Main.storyboard */; };
@@ -51,6 +62,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F65C9401D9B7700002BAC03;
 			remoteInfo = TextDetectiveCommon;
+		};
+		1F65C97F1D9B7B11002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F65C97C1D9B7B11002BAC03;
+			remoteInfo = "Text Detective Watch Extension";
+		};
+		1F65C9891D9B7B11002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F65C9701D9B7B11002BAC03;
+			remoteInfo = "Text Detective Watch";
+		};
+		1F65C99E1D9B7BB7002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F65C9981D9B7BB7002BAC03;
+			remoteInfo = "TextDetectiveCommon-watchOS";
 		};
 		1FB5C9851D8C7E3F009DE7D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -87,6 +119,39 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F65C98F1D9B7B11002BAC03 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F65C97E1D9B7B11002BAC03 /* Text Detective Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9931D9B7B11002BAC03 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1F65C98B1D9B7B11002BAC03 /* Text Detective Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9A51D9B7BB7002BAC03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F65C9A11D9B7BB7002BAC03 /* TextDetectiveCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +176,16 @@
 		1F65C9681D9B7839002BAC03 /* StringClipboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringClipboard.swift; sourceTree = "<group>"; };
 		1F65C9691D9B7839002BAC03 /* StringInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInspection.swift; sourceTree = "<group>"; };
 		1F65C96D1D9B7A32002BAC03 /* TestInput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestInput.txt; sourceTree = "<group>"; };
+		1F65C9711D9B7B11002BAC03 /* Text Detective Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Detective Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F65C9741D9B7B11002BAC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1F65C9761D9B7B11002BAC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F65C9781D9B7B11002BAC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F65C97D1D9B7B11002BAC03 /* Text Detective Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Text Detective Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F65C9821D9B7B11002BAC03 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1F65C9841D9B7B11002BAC03 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1F65C9861D9B7B11002BAC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F65C9881D9B7B11002BAC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F65C9991D9B7BB7002BAC03 /* TextDetectiveCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextDetectiveCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5C9701D8C7E3F009DE7D3 /* Text Detective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Detective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +218,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F65C94A1D9B7700002BAC03 /* TextDetectiveCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C97A1D9B7B11002BAC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9A01D9B7BB7002BAC03 /* TextDetectiveCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9951D9B7BB7002BAC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,10 +272,9 @@
 		1F65C9421D9B7700002BAC03 /* TextDetectiveCommon */ = {
 			isa = PBXGroup;
 			children = (
+				1F65C9AA1D9B7C70002BAC03 /* iOS */,
 				1F65C9671D9B7839002BAC03 /* StoryboardIdentifiable.swift */,
-				1F65C9681D9B7839002BAC03 /* StringClipboard.swift */,
 				1F65C9691D9B7839002BAC03 /* StringInspection.swift */,
-				1F65C95F1D9B7727002BAC03 /* TextInspectingViewController.swift */,
 				1F65C9611D9B7737002BAC03 /* Supporting Files */,
 			);
 			path = TextDetectiveCommon;
@@ -242,6 +331,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1F65C9721D9B7B11002BAC03 /* Text Detective Watch */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9731D9B7B11002BAC03 /* Interface.storyboard */,
+				1F65C9761D9B7B11002BAC03 /* Assets.xcassets */,
+				1F65C9781D9B7B11002BAC03 /* Info.plist */,
+			);
+			path = "Text Detective Watch";
+			sourceTree = "<group>";
+		};
+		1F65C9811D9B7B11002BAC03 /* Text Detective Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9821D9B7B11002BAC03 /* InterfaceController.swift */,
+				1F65C9841D9B7B11002BAC03 /* ExtensionDelegate.swift */,
+				1F65C9861D9B7B11002BAC03 /* Assets.xcassets */,
+				1F65C9881D9B7B11002BAC03 /* Info.plist */,
+			);
+			path = "Text Detective Watch Extension";
+			sourceTree = "<group>";
+		};
+		1F65C9AA1D9B7C70002BAC03 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9681D9B7839002BAC03 /* StringClipboard.swift */,
+				1F65C95F1D9B7727002BAC03 /* TextInspectingViewController.swift */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		1FB5C9671D8C7E3F009DE7D3 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +370,8 @@
 				1F65C9421D9B7700002BAC03 /* TextDetectiveCommon */,
 				1F65C94F1D9B7700002BAC03 /* TextDetectiveCommonTests */,
 				1FD51AFB1D8F9C4C009B65B7 /* Text Inspector */,
+				1F65C9721D9B7B11002BAC03 /* Text Detective Watch */,
+				1F65C9811D9B7B11002BAC03 /* Text Detective Watch Extension */,
 				1FB5C9711D8C7E3F009DE7D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -264,6 +385,9 @@
 				1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */,
 				1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */,
 				1F65C9491D9B7700002BAC03 /* TextDetectiveCommonTests.xctest */,
+				1F65C9711D9B7B11002BAC03 /* Text Detective Watch.app */,
+				1F65C97D1D9B7B11002BAC03 /* Text Detective Watch Extension.appex */,
+				1F65C9991D9B7BB7002BAC03 /* TextDetectiveCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,6 +450,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F65C9961D9B7BB7002BAC03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -366,6 +497,60 @@
 			productReference = 1F65C9491D9B7700002BAC03 /* TextDetectiveCommonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1F65C9701D9B7B11002BAC03 /* Text Detective Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F65C9901D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch" */;
+			buildPhases = (
+				1F65C96F1D9B7B11002BAC03 /* Resources */,
+				1F65C98F1D9B7B11002BAC03 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F65C9801D9B7B11002BAC03 /* PBXTargetDependency */,
+			);
+			name = "Text Detective Watch";
+			productName = "Text Detective Watch";
+			productReference = 1F65C9711D9B7B11002BAC03 /* Text Detective Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1F65C97C1D9B7B11002BAC03 /* Text Detective Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F65C98C1D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch Extension" */;
+			buildPhases = (
+				1F65C9791D9B7B11002BAC03 /* Sources */,
+				1F65C97A1D9B7B11002BAC03 /* Frameworks */,
+				1F65C97B1D9B7B11002BAC03 /* Resources */,
+				1F65C9A51D9B7BB7002BAC03 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F65C99F1D9B7BB7002BAC03 /* PBXTargetDependency */,
+			);
+			name = "Text Detective Watch Extension";
+			productName = "Text Detective Watch Extension";
+			productReference = 1F65C97D1D9B7B11002BAC03 /* Text Detective Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		1F65C9981D9B7BB7002BAC03 /* TextDetectiveCommon-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F65C9A21D9B7BB7002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommon-watchOS" */;
+			buildPhases = (
+				1F65C9941D9B7BB7002BAC03 /* Sources */,
+				1F65C9951D9B7BB7002BAC03 /* Frameworks */,
+				1F65C9961D9B7BB7002BAC03 /* Headers */,
+				1F65C9971D9B7BB7002BAC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TextDetectiveCommon-watchOS";
+			productName = "TextDetectiveCommon-watchOS";
+			productReference = 1F65C9991D9B7BB7002BAC03 /* TextDetectiveCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FB5C9981D8C7E3F009DE7D3 /* Build configuration list for PBXNativeTarget "Text Detective" */;
@@ -375,12 +560,14 @@
 				1FB5C96E1D8C7E3F009DE7D3 /* Resources */,
 				1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */,
 				1F65C95D1D9B7700002BAC03 /* Embed Frameworks */,
+				1F65C9931D9B7B11002BAC03 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1FD51B031D8F9C4C009B65B7 /* PBXTargetDependency */,
 				1F65C9551D9B7700002BAC03 /* PBXTargetDependency */,
+				1F65C98A1D9B7B11002BAC03 /* PBXTargetDependency */,
 			);
 			name = "Text Detective";
 			productName = "Text Detective";
@@ -461,6 +648,21 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1FB5C96F1D8C7E3F009DE7D3;
 					};
+					1F65C9701D9B7B11002BAC03 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2Z262HL3RX;
+						ProvisioningStyle = Automatic;
+					};
+					1F65C97C1D9B7B11002BAC03 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2Z262HL3RX;
+						ProvisioningStyle = Automatic;
+					};
+					1F65C9981D9B7BB7002BAC03 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2Z262HL3RX;
+						ProvisioningStyle = Automatic;
+					};
 					1FB5C96F1D8C7E3F009DE7D3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2Z262HL3RX;
@@ -504,6 +706,9 @@
 				1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */,
 				1F65C9481D9B7700002BAC03 /* TextDetectiveCommonTests */,
 				1FD51AF91D8F9C4C009B65B7 /* Text Inspector */,
+				1F65C9701D9B7B11002BAC03 /* Text Detective Watch */,
+				1F65C97C1D9B7B11002BAC03 /* Text Detective Watch Extension */,
+				1F65C9981D9B7BB7002BAC03 /* TextDetectiveCommon-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -521,6 +726,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F65C96E1D9B7A33002BAC03 /* TestInput.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C96F1D9B7B11002BAC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9771D9B7B11002BAC03 /* Assets.xcassets in Resources */,
+				1F65C9751D9B7B11002BAC03 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C97B1D9B7B11002BAC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9871D9B7B11002BAC03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9971D9B7BB7002BAC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +807,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F65C9791D9B7B11002BAC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9851D9B7B11002BAC03 /* ExtensionDelegate.swift in Sources */,
+				1F65C9831D9B7B11002BAC03 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9941D9B7BB7002BAC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9AB1D9B7D00002BAC03 /* StoryboardIdentifiable.swift in Sources */,
+				1F65C9A81D9B7C00002BAC03 /* StringInspection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB5C96C1D8C7E3F009DE7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,6 +877,21 @@
 			target = 1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */;
 			targetProxy = 1F65C9541D9B7700002BAC03 /* PBXContainerItemProxy */;
 		};
+		1F65C9801D9B7B11002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F65C97C1D9B7B11002BAC03 /* Text Detective Watch Extension */;
+			targetProxy = 1F65C97F1D9B7B11002BAC03 /* PBXContainerItemProxy */;
+		};
+		1F65C98A1D9B7B11002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F65C9701D9B7B11002BAC03 /* Text Detective Watch */;
+			targetProxy = 1F65C9891D9B7B11002BAC03 /* PBXContainerItemProxy */;
+		};
+		1F65C99F1D9B7BB7002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F65C9981D9B7BB7002BAC03 /* TextDetectiveCommon-watchOS */;
+			targetProxy = 1F65C99E1D9B7BB7002BAC03 /* PBXContainerItemProxy */;
+		};
 		1FB5C9861D8C7E3F009DE7D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */;
@@ -648,6 +910,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1F65C9731D9B7B11002BAC03 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F65C9741D9B7B11002BAC03 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		1FB5C9771D8C7E3F009DE7D3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -747,6 +1017,130 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text Detective.app/Text Detective";
+			};
+			name = Release;
+		};
+		1F65C98D1D9B7B11002BAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				INFOPLIST_FILE = "Text Detective Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1F65C98E1D9B7B11002BAC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				INFOPLIST_FILE = "Text Detective Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1F65C9911D9B7B11002BAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				IBSC_MODULE = Text_Detective_Watch_Extension;
+				INFOPLIST_FILE = "Text Detective Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1F65C9921D9B7B11002BAC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				IBSC_MODULE = Text_Detective_Watch_Extension;
+				INFOPLIST_FILE = "Text Detective Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.Text-Detective.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1F65C9A31D9B7BB7002BAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextDetectiveCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.TextDetectiveCommon-watchOS";
+				PRODUCT_MODULE_NAME = TextDetectiveCommon;
+				PRODUCT_NAME = TextDetectiveCommon;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1F65C9A41D9B7BB7002BAC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextDetectiveCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.detroitlabs.TextDetectiveCommon-watchOS";
+				PRODUCT_MODULE_NAME = TextDetectiveCommon;
+				PRODUCT_NAME = TextDetectiveCommon;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -973,6 +1367,30 @@
 			buildConfigurations = (
 				1F65C95A1D9B7700002BAC03 /* Debug */,
 				1F65C95B1D9B7700002BAC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F65C98C1D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F65C98D1D9B7B11002BAC03 /* Debug */,
+				1F65C98E1D9B7B11002BAC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F65C9901D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F65C9911D9B7B11002BAC03 /* Debug */,
+				1F65C9921D9B7B11002BAC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F65C9A21D9B7BB7002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommon-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F65C9A31D9B7BB7002BAC03 /* Debug */,
+				1F65C9A41D9B7BB7002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -6,9 +6,9 @@
 //  Copyright © 2016 Detroit Labs. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-protocol StoryboardIdentifiable {
+public protocol StoryboardIdentifiable {
     
     static var storyboardIdentifier: String { get }
     

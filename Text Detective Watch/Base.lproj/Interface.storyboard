@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Text Detective-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Text Detective" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Text_Detective_Watch" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Enter Text" id="DH6-qF-nha">
+                            <connections>
+                                <action selector="enterTextButtonPressed" destination="AgC-eL-Hgc" id="4bl-pv-pK7"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="EN0-DE-nXe">
+                            <items>
+                                <tableRow identifier="CodePointRowController" id="Qvm-5k-OdF" customClass="CodePointRowController" customModule="Text_Detective_Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="SLo-3Z-ibO">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="😀" id="43W-F4-Sa1"/>
+                                            <label alignment="left" verticalAlignment="center" text="GRINNING FACE" numberOfLines="0" minimumScaleFactor="0.69999999999999996" id="7y2-JP-PZA"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="codePointLabel" destination="43W-F4-Sa1" id="NKn-NB-0t2"/>
+                                        <outlet property="descriptionLabel" destination="7y2-JP-PZA" id="8U6-FS-YsX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="EN0-DE-nXe" id="niB-Se-7hE"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

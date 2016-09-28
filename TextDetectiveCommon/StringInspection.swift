@@ -23,7 +23,7 @@ extension String {
         case singleCharacter(String)
         case unicodeDescription(String)
         
-        var originalString: String {
+        public var originalString: String {
             switch self {
             case let .singleCharacter(string):
                 return string
