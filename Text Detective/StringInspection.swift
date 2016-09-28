@@ -41,7 +41,7 @@ extension String {
         return NSMutableString(string: self) as CFMutableString
     }
     
-    func inspect(withOptions options: InspectionOptions = InspectionOptions()) -> [InspectionResult] {
+    public func inspect(withOptions options: InspectionOptions = InspectionOptions()) -> [InspectionResult] {
         let cfString = self.mutableCFString
         
         if options.shouldDecompose {
@@ -91,7 +91,7 @@ extension String {
         return results
     }
     
-    static func convert(fromUnicodeDescription description: String) -> String {
+    private static func convert(fromUnicodeDescription description: String) -> String {
         let cfString = "\\N{\(description)}".mutableCFString
         
         CFStringTransform(cfString,
