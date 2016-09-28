@@ -19,26 +19,4 @@ class Text_DetectiveTests: XCTestCase {
         super.tearDown()
     }
     
-    func testPerformanceOfLongZalgoTextParsing() {
-        guard let path = Bundle(for: Text_DetectiveTests.self)
-            .url(forResource: "TestInput",
-                 withExtension: "txt",
-                 subdirectory: nil,
-                 localization: nil)
-            else { fatalError() }
-
-        let text: String
-        
-        do {
-            text = try String(contentsOf: path)
-        }
-        catch {
-            fatalError()
-        }
-        
-        self.measure {
-            let _ = text.characterInspection
-        }
-    }
-    
 }
