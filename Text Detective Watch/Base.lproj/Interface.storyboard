@@ -34,6 +34,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="button" destination="DH6-qF-nha" id="chR-AW-Bnc"/>
                         <outlet property="table" destination="EN0-DE-nXe" id="niB-Se-7hE"/>
                     </connections>
                 </controller>

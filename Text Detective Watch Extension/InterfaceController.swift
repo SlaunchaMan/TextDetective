@@ -22,6 +22,7 @@ class CodePointRowController: NSObject, StoryboardIdentifiable {
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet weak var button: WKInterfaceButton?
     @IBOutlet weak var table: WKInterfaceTable?
     
     public var characterInspectionResults: [String.InspectionResult] = []
@@ -51,6 +52,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     func populate(with string: String) {
+        if let button = button {
+            button.setTitle(string)
+        }
+        
         guard let table = table else { return }
         
         characterInspectionResults = string.inspect()
