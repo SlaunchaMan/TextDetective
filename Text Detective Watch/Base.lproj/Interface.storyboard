@@ -21,7 +21,7 @@
                                 <tableRow identifier="CodePointRowController" id="Qvm-5k-OdF" customClass="CodePointRowController" customModule="Text_Detective_Watch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="SLo-3Z-ibO">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="😀" id="43W-F4-Sa1"/>
+                                            <label width="40" height="40" alignment="left" verticalAlignment="center" text="😀" textAlignment="center" minimumScaleFactor="0.75" id="43W-F4-Sa1"/>
                                             <label alignment="left" verticalAlignment="center" text="GRINNING FACE" numberOfLines="0" minimumScaleFactor="0.69999999999999996" id="7y2-JP-PZA"/>
                                         </items>
                                     </group>
