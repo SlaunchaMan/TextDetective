@@ -29,7 +29,7 @@ class TextDetectiveCommonTests: XCTestCase {
         }
         
         self.measure {
-            let _ = text.characterInspection
+            let _ = text.inspect()
         }
     }
     
