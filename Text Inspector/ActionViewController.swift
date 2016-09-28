@@ -22,51 +22,48 @@ class ActionViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let items = extensionContext?.inputItems
-            .flatMap { $0 as? NSExtensionItem }
-            .flatMap { $0.attachments }
-    
-        // Get the item[s] we're handling from the extension context.
-//        
-//        // For example, look for an image and place it into an image view.
-//        // Replace this with something appropriate for the type[s] your extension supports.
-//        var imageFound = false
-//        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-//            for provider in item.attachments! as! [NSItemProvider] {
-//                if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-//                    // This is an image. We'll load it, then place it in our image view.
-//                    weak var weakImageView = self.imageView
-//                    provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
-//                        OperationQueue.main.addOperation {
-//                            if let strongImageView = weakImageView {
-//                                if let imageURL = imageURL as? URL {
-//                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-//                                }
-//                            }
-//                        }
-//                    })
-//                    
-//                    imageFound = true
-//                    break
-//                }
-//            }
-//            
-//            if (imageFound) {
-//                // We only handle one image, so stop looking for more.
-//                break
-//            }
-//        }
+        populateTextFromExtensionContext()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func populateTextFromExtensionContext() {
+        outerLoop: for item in extensionContext?.inputItems as? [NSExtensionItem] ?? [] {
+            for itemProvider in item.attachments as? [NSItemProvider] ?? [] {
+                if itemProvider.hasItemConformingToTypeIdentifier(kUTTypeText as String) {
+                    itemProvider.loadItem(forTypeIdentifier: kUTTypeText as String,
+                                          options: nil) { [weak self] (text, error) in
+                                            if let text = text as? String {
+                                                OperationQueue.main.addOperation {
+                                                    self?.characterInspectionResults = text.inspect()
+                                                    self?.updateTextFieldText()
+                                                    self?.tableView?.reloadData()
+                                                }
+                                            }
+                    }
+                    
+                    break outerLoop
+                }
+            }
+        }
     }
 
     @IBAction func done() {
-        // Return any edited content to the host app.
-        // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+        let items: [NSExtensionItem]?
+        
+        if let text = textField?.text {
+            let item = NSExtensionItem()
+            let attachment = NSItemProvider(item: text as NSSecureCoding?,
+                                            typeIdentifier: kUTTypeText as String)
+            
+            item.attachments = [attachment]
+            
+            items = [item]
+        }
+        else {
+            items = extensionContext?.inputItems as? [NSExtensionItem]
+        }
+        
+        extensionContext?.completeRequest(returningItems: items,
+                                          completionHandler: nil)
     }
 
 }
