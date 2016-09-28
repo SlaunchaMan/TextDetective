@@ -43,13 +43,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F65C9481D9B7700002BAC03"
+               BuildableName = "TextDetectiveCommonTests.xctest"
+               BlueprintName = "TextDetectiveCommonTests"
+               ReferencedContainer = "container:Text Detective.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FD51AF91D8F9C4C009B65B7"
-            BuildableName = "Text Inspector.appex"
-            BlueprintName = "Text Inspector"
+            BlueprintIdentifier = "1FB5C96F1D8C7E3F009DE7D3"
+            BuildableName = "Text Detective.app"
+            BlueprintName = "Text Detective"
             ReferencedContainer = "container:Text Detective.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

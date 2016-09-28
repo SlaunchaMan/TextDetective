@@ -9,7 +9,9 @@
 import UIKit
 import MobileCoreServices
 
-class ActionViewController: ViewController {
+import TextDetectiveCommon
+
+class ActionViewController: TextInspectingViewController {
     
     @IBOutlet var navigationBar: UINavigationBar? {
         didSet {

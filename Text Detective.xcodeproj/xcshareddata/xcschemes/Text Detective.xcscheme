@@ -49,6 +49,16 @@
                ReferencedContainer = "container:Text Detective.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F65C9481D9B7700002BAC03"
+               BuildableName = "TextDetectiveCommonTests.xctest"
+               BlueprintName = "TextDetectiveCommonTests"
+               ReferencedContainer = "container:Text Detective.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

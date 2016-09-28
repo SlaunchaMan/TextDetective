@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F65C94A1D9B7700002BAC03 /* TextDetectiveCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */; };
+		1F65C9511D9B7700002BAC03 /* TextDetectiveCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9501D9B7700002BAC03 /* TextDetectiveCommonTests.swift */; };
+		1F65C9561D9B7700002BAC03 /* TextDetectiveCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */; };
+		1F65C9571D9B7700002BAC03 /* TextDetectiveCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F65C9601D9B7727002BAC03 /* TextInspectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C95F1D9B7727002BAC03 /* TextInspectingViewController.swift */; };
+		1F65C9661D9B7786002BAC03 /* TextDetectiveCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */; };
+		1F65C96A1D9B7839002BAC03 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9671D9B7839002BAC03 /* StoryboardIdentifiable.swift */; };
+		1F65C96B1D9B7839002BAC03 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9681D9B7839002BAC03 /* StringClipboard.swift */; };
+		1F65C96C1D9B7839002BAC03 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65C9691D9B7839002BAC03 /* StringInspection.swift */; };
 		1FB5C9741D8C7E3F009DE7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */; };
 		1FB5C9761D8C7E3F009DE7D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */; };
 		1FB5C9791D8C7E3F009DE7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C9771D8C7E3F009DE7D3 /* Main.storyboard */; };
@@ -14,20 +23,35 @@
 		1FB5C97E1D8C7E3F009DE7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5C97C1D8C7E3F009DE7D3 /* LaunchScreen.storyboard */; };
 		1FB5C9891D8C7E3F009DE7D3 /* Text_DetectiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9881D8C7E3F009DE7D3 /* Text_DetectiveTests.swift */; };
 		1FB5C9941D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9931D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift */; };
-		1FB5C9A21D8C89E4009DE7D3 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */; };
-		1FD51AF01D8F7DFF009B65B7 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */; };
-		1FD51AF21D8F89C3009B65B7 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */; };
 		1FD51AF51D8F94BA009B65B7 /* TestInput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FD51AF41D8F94BA009B65B7 /* TestInput.txt */; };
 		1FD51AFD1D8F9C4C009B65B7 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */; };
 		1FD51B001D8F9C4C009B65B7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */; };
 		1FD51B041D8F9C4C009B65B7 /* Text Inspector.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1FD51B091D8F9D34009B65B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */; };
-		1FD51B0B1D908432009B65B7 /* StringClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */; };
-		1FD51B0C1D908439009B65B7 /* StringInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */; };
-		1FD51B0D1D908442009B65B7 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F65C94B1D9B7700002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F65C9401D9B7700002BAC03;
+			remoteInfo = TextDetectiveCommon;
+		};
+		1F65C94D1D9B7700002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB5C96F1D8C7E3F009DE7D3;
+			remoteInfo = "Text Detective";
+		};
+		1F65C9541D9B7700002BAC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F65C9401D9B7700002BAC03;
+			remoteInfo = TextDetectiveCommon;
+		};
 		1FB5C9851D8C7E3F009DE7D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FB5C9681D8C7E3F009DE7D3 /* Project object */;
@@ -52,6 +76,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1F65C95D1D9B7700002BAC03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F65C9571D9B7700002BAC03 /* TextDetectiveCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +101,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextDetectiveCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F65C9441D9B7700002BAC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F65C9491D9B7700002BAC03 /* TextDetectiveCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextDetectiveCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F65C9501D9B7700002BAC03 /* TextDetectiveCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetectiveCommonTests.swift; sourceTree = "<group>"; };
+		1F65C9521D9B7700002BAC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F65C95F1D9B7727002BAC03 /* TextInspectingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInspectingViewController.swift; sourceTree = "<group>"; };
+		1F65C9671D9B7839002BAC03 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		1F65C9681D9B7839002BAC03 /* StringClipboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringClipboard.swift; sourceTree = "<group>"; };
+		1F65C9691D9B7839002BAC03 /* StringInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInspection.swift; sourceTree = "<group>"; };
 		1FB5C9701D8C7E3F009DE7D3 /* Text Detective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Detective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +123,6 @@
 		1FB5C98F1D8C7E3F009DE7D3 /* Text DetectiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Text DetectiveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5C9931D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text_DetectiveUITests.swift; sourceTree = "<group>"; };
 		1FB5C9951D8C7E3F009DE7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInspection.swift; sourceTree = "<group>"; };
-		1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
-		1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringClipboard.swift; sourceTree = "<group>"; };
 		1FD51AF41D8F94BA009B65B7 /* TestInput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestInput.txt; sourceTree = "<group>"; };
 		1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Text Inspector.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
@@ -90,10 +131,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F65C93D1D9B7700002BAC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9461D9B7700002BAC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C94A1D9B7700002BAC03 /* TextDetectiveCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB5C96D1D8C7E3F009DE7D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F65C9561D9B7700002BAC03 /* TextDetectiveCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,18 +172,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F65C9661D9B7786002BAC03 /* TextDetectiveCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F65C9421D9B7700002BAC03 /* TextDetectiveCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9671D9B7839002BAC03 /* StoryboardIdentifiable.swift */,
+				1F65C9681D9B7839002BAC03 /* StringClipboard.swift */,
+				1F65C9691D9B7839002BAC03 /* StringInspection.swift */,
+				1F65C95F1D9B7727002BAC03 /* TextInspectingViewController.swift */,
+				1F65C9611D9B7737002BAC03 /* Supporting Files */,
+			);
+			path = TextDetectiveCommon;
+			sourceTree = "<group>";
+		};
+		1F65C94F1D9B7700002BAC03 /* TextDetectiveCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9501D9B7700002BAC03 /* TextDetectiveCommonTests.swift */,
+				1F65C9621D9B773E002BAC03 /* Supporting Files */,
+			);
+			path = TextDetectiveCommonTests;
+			sourceTree = "<group>";
+		};
+		1F65C9611D9B7737002BAC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9441D9B7700002BAC03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F65C9621D9B773E002BAC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9521D9B7700002BAC03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F65C9631D9B7745002BAC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */,
+				1FD51B011D8F9C4C009B65B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F65C9641D9B7751002BAC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5C98A1D8C7E3F009DE7D3 /* Info.plist */,
+				1FD51AF41D8F94BA009B65B7 /* TestInput.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F65C9651D9B7758002BAC03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5C9951D8C7E3F009DE7D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1FB5C9671D8C7E3F009DE7D3 = {
 			isa = PBXGroup;
 			children = (
 				1FB5C9721D8C7E3F009DE7D3 /* Text Detective */,
 				1FB5C9871D8C7E3F009DE7D3 /* Text DetectiveTests */,
 				1FB5C9921D8C7E3F009DE7D3 /* Text DetectiveUITests */,
+				1F65C9421D9B7700002BAC03 /* TextDetectiveCommon */,
+				1F65C94F1D9B7700002BAC03 /* TextDetectiveCommonTests */,
 				1FD51AFB1D8F9C4C009B65B7 /* Text Inspector */,
 				1FB5C9711D8C7E3F009DE7D3 /* Products */,
 			);
@@ -139,6 +262,8 @@
 				1FB5C9841D8C7E3F009DE7D3 /* Text DetectiveTests.xctest */,
 				1FB5C98F1D8C7E3F009DE7D3 /* Text DetectiveUITests.xctest */,
 				1FD51AFA1D8F9C4C009B65B7 /* Text Inspector.appex */,
+				1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */,
+				1F65C9491D9B7700002BAC03 /* TextDetectiveCommonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				1FB5C9731D8C7E3F009DE7D3 /* AppDelegate.swift */,
-				1FD51AEF1D8F7DFF009B65B7 /* StoryboardIdentifiable.swift */,
-				1FD51AF11D8F89C3009B65B7 /* StringClipboard.swift */,
-				1FB5C9A11D8C89E4009DE7D3 /* StringInspection.swift */,
 				1FB5C9751D8C7E3F009DE7D3 /* ViewController.swift */,
 				1FD51AF31D8F8AA8009B65B7 /* Supporting Files */,
 			);
@@ -160,8 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB5C9881D8C7E3F009DE7D3 /* Text_DetectiveTests.swift */,
-				1FB5C98A1D8C7E3F009DE7D3 /* Info.plist */,
-				1FD51AF41D8F94BA009B65B7 /* TestInput.txt */,
+				1F65C9641D9B7751002BAC03 /* Supporting Files */,
 			);
 			path = "Text DetectiveTests";
 			sourceTree = "<group>";
@@ -170,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB5C9931D8C7E3F009DE7D3 /* Text_DetectiveUITests.swift */,
-				1FB5C9951D8C7E3F009DE7D3 /* Info.plist */,
+				1F65C9651D9B7758002BAC03 /* Supporting Files */,
 			);
 			path = "Text DetectiveUITests";
 			sourceTree = "<group>";
@@ -190,15 +311,61 @@
 			isa = PBXGroup;
 			children = (
 				1FD51AFC1D8F9C4C009B65B7 /* ActionViewController.swift */,
-				1FD51AFE1D8F9C4C009B65B7 /* MainInterface.storyboard */,
-				1FD51B011D8F9C4C009B65B7 /* Info.plist */,
+				1F65C9631D9B7745002BAC03 /* Supporting Files */,
 			);
 			path = "Text Inspector";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1F65C93E1D9B7700002BAC03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F65C95C1D9B7700002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommon" */;
+			buildPhases = (
+				1F65C93C1D9B7700002BAC03 /* Sources */,
+				1F65C93D1D9B7700002BAC03 /* Frameworks */,
+				1F65C93E1D9B7700002BAC03 /* Headers */,
+				1F65C93F1D9B7700002BAC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextDetectiveCommon;
+			productName = TextDetectiveCommon;
+			productReference = 1F65C9411D9B7700002BAC03 /* TextDetectiveCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F65C9481D9B7700002BAC03 /* TextDetectiveCommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F65C95E1D9B7700002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommonTests" */;
+			buildPhases = (
+				1F65C9451D9B7700002BAC03 /* Sources */,
+				1F65C9461D9B7700002BAC03 /* Frameworks */,
+				1F65C9471D9B7700002BAC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F65C94C1D9B7700002BAC03 /* PBXTargetDependency */,
+				1F65C94E1D9B7700002BAC03 /* PBXTargetDependency */,
+			);
+			name = TextDetectiveCommonTests;
+			productName = TextDetectiveCommonTests;
+			productReference = 1F65C9491D9B7700002BAC03 /* TextDetectiveCommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FB5C9981D8C7E3F009DE7D3 /* Build configuration list for PBXNativeTarget "Text Detective" */;
@@ -207,11 +374,13 @@
 				1FB5C96D1D8C7E3F009DE7D3 /* Frameworks */,
 				1FB5C96E1D8C7E3F009DE7D3 /* Resources */,
 				1FD51B081D8F9C4C009B65B7 /* Embed App Extensions */,
+				1F65C95D1D9B7700002BAC03 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1FD51B031D8F9C4C009B65B7 /* PBXTargetDependency */,
+				1F65C9551D9B7700002BAC03 /* PBXTargetDependency */,
 			);
 			name = "Text Detective";
 			productName = "Text Detective";
@@ -281,6 +450,17 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Detroit Labs";
 				TargetAttributes = {
+					1F65C9401D9B7700002BAC03 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2Z262HL3RX;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					1F65C9481D9B7700002BAC03 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1FB5C96F1D8C7E3F009DE7D3;
+					};
 					1FB5C96F1D8C7E3F009DE7D3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2Z262HL3RX;
@@ -321,12 +501,28 @@
 				1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */,
 				1FB5C9831D8C7E3F009DE7D3 /* Text DetectiveTests */,
 				1FB5C98E1D8C7E3F009DE7D3 /* Text DetectiveUITests */,
+				1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */,
+				1F65C9481D9B7700002BAC03 /* TextDetectiveCommonTests */,
 				1FD51AF91D8F9C4C009B65B7 /* Text Inspector */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F65C93F1D9B7700002BAC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9471D9B7700002BAC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB5C96E1D8C7E3F009DE7D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,15 +559,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F65C93C1D9B7700002BAC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C96C1D9B7839002BAC03 /* StringInspection.swift in Sources */,
+				1F65C96A1D9B7839002BAC03 /* StoryboardIdentifiable.swift in Sources */,
+				1F65C9601D9B7727002BAC03 /* TextInspectingViewController.swift in Sources */,
+				1F65C96B1D9B7839002BAC03 /* StringClipboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F65C9451D9B7700002BAC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F65C9511D9B7700002BAC03 /* TextDetectiveCommonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB5C96C1D8C7E3F009DE7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD51AF01D8F7DFF009B65B7 /* StoryboardIdentifiable.swift in Sources */,
 				1FB5C9761D8C7E3F009DE7D3 /* ViewController.swift in Sources */,
 				1FB5C9741D8C7E3F009DE7D3 /* AppDelegate.swift in Sources */,
-				1FD51AF21D8F89C3009B65B7 /* StringClipboard.swift in Sources */,
-				1FB5C9A21D8C89E4009DE7D3 /* StringInspection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,17 +607,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD51B0C1D908439009B65B7 /* StringInspection.swift in Sources */,
 				1FD51B091D8F9D34009B65B7 /* ViewController.swift in Sources */,
 				1FD51AFD1D8F9C4C009B65B7 /* ActionViewController.swift in Sources */,
-				1FD51B0B1D908432009B65B7 /* StringClipboard.swift in Sources */,
-				1FD51B0D1D908442009B65B7 /* StoryboardIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F65C94C1D9B7700002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */;
+			targetProxy = 1F65C94B1D9B7700002BAC03 /* PBXContainerItemProxy */;
+		};
+		1F65C94E1D9B7700002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */;
+			targetProxy = 1F65C94D1D9B7700002BAC03 /* PBXContainerItemProxy */;
+		};
+		1F65C9551D9B7700002BAC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */;
+			targetProxy = 1F65C9541D9B7700002BAC03 /* PBXContainerItemProxy */;
+		};
 		1FB5C9861D8C7E3F009DE7D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */;
@@ -451,6 +675,79 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F65C9581D9B7700002BAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextDetectiveCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.TextDetectiveCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F65C9591D9B7700002BAC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2Z262HL3RX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextDetectiveCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.TextDetectiveCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F65C95A1D9B7700002BAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TextDetectiveCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.TextDetectiveCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text Detective.app/Text Detective";
+			};
+			name = Debug;
+		};
+		1F65C95B1D9B7700002BAC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TextDetectiveCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.TextDetectiveCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text Detective.app/Text Detective";
+			};
+			name = Release;
+		};
 		1FB5C9961D8C7E3F009DE7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,6 +958,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F65C95C1D9B7700002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F65C9581D9B7700002BAC03 /* Debug */,
+				1F65C9591D9B7700002BAC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F65C95E1D9B7700002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F65C95A1D9B7700002BAC03 /* Debug */,
+				1F65C95B1D9B7700002BAC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1FB5C96B1D8C7E3F009DE7D3 /* Build configuration list for PBXProject "Text Detective" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
