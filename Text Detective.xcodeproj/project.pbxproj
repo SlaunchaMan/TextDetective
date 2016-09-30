@@ -269,6 +269,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3ACA881D9F034A00756DA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9761D9B7B11002BAC03 /* Assets.xcassets */,
+				1F65C9781D9B7B11002BAC03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F3ACA891D9F035B00756DA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F65C9861D9B7B11002BAC03 /* Assets.xcassets */,
+				1F65C9881D9B7B11002BAC03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1F65C9421D9B7700002BAC03 /* TextDetectiveCommon */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,8 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				1F65C9731D9B7B11002BAC03 /* Interface.storyboard */,
-				1F65C9761D9B7B11002BAC03 /* Assets.xcassets */,
-				1F65C9781D9B7B11002BAC03 /* Info.plist */,
+				1F3ACA881D9F034A00756DA5 /* Supporting Files */,
 			);
 			path = "Text Detective Watch";
 			sourceTree = "<group>";
@@ -346,8 +363,7 @@
 			children = (
 				1F65C9821D9B7B11002BAC03 /* InterfaceController.swift */,
 				1F65C9841D9B7B11002BAC03 /* ExtensionDelegate.swift */,
-				1F65C9861D9B7B11002BAC03 /* Assets.xcassets */,
-				1F65C9881D9B7B11002BAC03 /* Info.plist */,
+				1F3ACA891D9F035B00756DA5 /* Supporting Files */,
 			);
 			path = "Text Detective Watch Extension";
 			sourceTree = "<group>";
@@ -1361,6 +1377,7 @@
 				1F65C9591D9B7700002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F65C95E1D9B7700002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommonTests" */ = {
 			isa = XCConfigurationList;
@@ -1369,6 +1386,7 @@
 				1F65C95B1D9B7700002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F65C98C1D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch Extension" */ = {
 			isa = XCConfigurationList;
@@ -1377,6 +1395,7 @@
 				1F65C98E1D9B7B11002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F65C9901D9B7B11002BAC03 /* Build configuration list for PBXNativeTarget "Text Detective Watch" */ = {
 			isa = XCConfigurationList;
@@ -1385,6 +1404,7 @@
 				1F65C9921D9B7B11002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F65C9A21D9B7BB7002BAC03 /* Build configuration list for PBXNativeTarget "TextDetectiveCommon-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1393,6 +1413,7 @@
 				1F65C9A41D9B7BB7002BAC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB5C96B1D8C7E3F009DE7D3 /* Build configuration list for PBXProject "Text Detective" */ = {
 			isa = XCConfigurationList;
