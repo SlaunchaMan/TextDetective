@@ -719,11 +719,11 @@
 				1FB5C96F1D8C7E3F009DE7D3 /* Text Detective */,
 				1FB5C9831D8C7E3F009DE7D3 /* Text DetectiveTests */,
 				1FB5C98E1D8C7E3F009DE7D3 /* Text DetectiveUITests */,
-				1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */,
 				1F65C9481D9B7700002BAC03 /* TextDetectiveCommonTests */,
 				1FD51AF91D8F9C4C009B65B7 /* Text Inspector */,
 				1F65C9701D9B7B11002BAC03 /* Text Detective Watch */,
 				1F65C97C1D9B7B11002BAC03 /* Text Detective Watch Extension */,
+				1F65C9401D9B7700002BAC03 /* TextDetectiveCommon */,
 				1F65C9981D9B7BB7002BAC03 /* TextDetectiveCommon-watchOS */,
 			);
 		};
