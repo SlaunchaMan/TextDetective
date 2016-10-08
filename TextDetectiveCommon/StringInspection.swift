@@ -19,17 +19,11 @@ extension String {
         }
     }
     
-    public enum InspectionResult {
-        case singleCharacter(String)
-        case unicodeDescription(String)
+    public struct InspectionResult {
+        public let unicodeDescription: String
         
         public var originalString: String {
-            switch self {
-            case let .singleCharacter(string):
-                return string
-            case let .unicodeDescription(string):
-                return String.convert(fromUnicodeDescription: string)
-            }
+            return String.convert(fromUnicodeDescription: unicodeDescription)
         }
     }
     
@@ -62,30 +56,14 @@ extension String {
         
         var buffer: NSString? = NSString()
         
-        if !descriptionString.hasPrefix("\\N{") {
-            if scanner.scanUpTo("\\N{", into: &buffer) {
-                if let buffer = buffer {
-                    results += (buffer as String)
-                        .characters
-                        .map { return .singleCharacter(String($0)) }
-                }
-            }
-        }
-        
         while scanner.scanString("\\N{", into: nil) {
             scanner.scanUpTo("}", into: &buffer)
             
-            results.append(.unicodeDescription(buffer as? String ?? ""))
-            
-            scanner.scanString("}", into: nil)
-            
-            if scanner.scanUpTo("\\N{", into: &buffer) {
-                if let buffer = buffer {
-                    results += (buffer as String)
-                        .characters
-                        .map { return .singleCharacter(String($0)) }
-                }
+            if let buffer = buffer as? String {
+                results.append(InspectionResult(unicodeDescription: buffer))
             }
+            
+            scanner.scanUpTo("\\N{", into: &buffer)
         }
     
         return results

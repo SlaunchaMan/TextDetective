@@ -110,16 +110,10 @@ extension TextInspectingViewController: UITableViewDataSource {
         guard let cell = CodePointCell.dequeue(fromTableView: tableView)
             else { fatalError() }
         
-        let unicodeDescription = characterInspectionResults[indexPath.row]
+        let inspectionResult = characterInspectionResults[indexPath.row]
         
-        cell.codePointLabel?.text = unicodeDescription.originalString
-        
-        switch unicodeDescription {
-        case let .singleCharacter(string):
-            cell.descriptionLabel?.text = string
-        case let .unicodeDescription(string):
-            cell.descriptionLabel?.text = string
-        }
+        cell.codePointLabel?.text = inspectionResult.originalString
+        cell.descriptionLabel?.text = inspectionResult.unicodeDescription
         
         return cell
     }

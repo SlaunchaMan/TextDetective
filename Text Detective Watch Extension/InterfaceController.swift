@@ -69,12 +69,7 @@ class InterfaceController: WKInterfaceController {
                 
                 rowController.codePointLabel?.setText(inspectionResult.originalString)
                 
-                switch inspectionResult {
-                case .singleCharacter(let string):
-                    rowController.descriptionLabel?.setText(string)
-                case .unicodeDescription(let string):
-                    rowController.descriptionLabel?.setText(string)
-                }
+                rowController.descriptionLabel?.setText(inspectionResult.unicodeDescription)
             }
         }
     }

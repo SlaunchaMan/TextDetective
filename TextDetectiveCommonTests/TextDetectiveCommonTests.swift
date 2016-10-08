@@ -33,4 +33,30 @@ class TextDetectiveCommonTests: XCTestCase {
         }
     }
     
+    func testParsingCharacter() {
+        let family = "👪"
+        
+        let inspection = family.inspect()
+        
+        XCTAssert(inspection.count == 1)
+        
+        if let result = inspection.first {
+            XCTAssertEqual(result.originalString, "👪")
+            XCTAssertEqual(result.unicodeDescription, "FAMILY")
+        }
+    }
+    
+    func testParsingComposedEmoji() {
+        let family = "👩‍👩‍👧‍👧"
+        
+        let inspection = family.inspect()
+        
+        XCTAssertEqual(inspection.count, 7)
+        
+        XCTAssertEqual(inspection[0].originalString, "👩")
+        XCTAssertEqual(inspection[2].originalString, "👩")
+        XCTAssertEqual(inspection[4].originalString, "👧")
+        XCTAssertEqual(inspection[6].originalString, "👧")
+    }
+    
 }
